@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="713.0" prefWidth="1503.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javaapplication.PRLReportController">
+   <left>
+      <Pane prefHeight="331.0" prefWidth="392.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="70.0" layoutY="31.0" prefHeight="25.0" prefWidth="81.0" text="Lecturer" textFill="#111111">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtLecture" layoutX="7.0" layoutY="97.0" prefHeight="25.0" prefWidth="179.0" promptText="lecture" />
+            <Label layoutX="273.0" layoutY="31.0" prefHeight="25.0" prefWidth="81.0" text="Class" textFill="#111111">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtClass" layoutX="199.0" layoutY="97.0" prefHeight="25.0" prefWidth="179.0" promptText="class" />
+         </children>
+      </Pane>
+   </left>
+   <right>
+      <Pane prefHeight="331.0" prefWidth="475.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="36.0" layoutY="35.0" prefHeight="25.0" prefWidth="135.0" text="Challenges" textFill="#111111">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtChallenges" layoutX="7.0" layoutY="94.0" prefHeight="25.0" prefWidth="179.0" promptText="challenges" />
+            <Label layoutX="210.0" layoutY="35.0" prefHeight="25.0" prefWidth="251.0" text="Student Registrations per Course" textFill="#111111">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtStudent_registrations" layoutX="229.0" layoutY="94.0" prefHeight="25.0" prefWidth="194.0" promptText="Student Registrations per course" />
+         </children>
+      </Pane>
+   </right>
+   <top>
+      <Pane prefHeight="243.0" prefWidth="815.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="250.0" layoutY="14.0" text="Moderation: PRL Weekly Course Report" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="250.0" layoutY="55.0" text="Campus" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="250.0" layoutY="91.0" text="Faculty" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="250.0" layoutY="126.0" text="Stream " textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="247.0" layoutY="161.0" text="Principal Lecturer’s Name" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="247.0" layoutY="194.0" text="Week" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCampus" layoutX="549.0" layoutY="55.0" prefHeight="25.0" prefWidth="245.0" promptText="campus" />
+            <TextField fx:id="txtFaculty" layoutX="549.0" layoutY="91.0" prefHeight="25.0" prefWidth="246.0" promptText="faculty" />
+            <TextField fx:id="txtStream" layoutX="549.0" layoutY="126.0" prefHeight="25.0" prefWidth="244.0" promptText="stream" />
+            <TextField fx:id="txtPRL" layoutX="549.0" layoutY="161.0" prefHeight="25.0" prefWidth="244.0" promptText="PRL" />
+            <TextField fx:id="txtWeek" layoutX="549.0" layoutY="194.0" prefHeight="25.0" prefWidth="246.0" promptText="week" />
+            <ImageView fitHeight="160.0" fitWidth="149.0" layoutX="6.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@download%20(6).png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <Pane prefHeight="331.0" prefWidth="632.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="20.0" layoutY="33.0" prefHeight="25.0" prefWidth="163.0" text="Course Name &amp; Class" textFill="#111111">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCourse_name_and_class" layoutX="12.0" layoutY="97.0" prefHeight="25.0" prefWidth="179.0" promptText="course&amp;class" />
+            <Label layoutX="257.0" layoutY="33.0" prefHeight="25.0" prefWidth="106.0" text="chapter " textFill="#111111">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtChapter" layoutX="221.0" layoutY="97.0" prefHeight="25.0" prefWidth="179.0" promptText="chapter" />
+            <Label layoutX="448.0" layoutY="33.0" prefHeight="25.0" prefWidth="135.0" text="Mode of delivery" textFill="#111111">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtMode_of_delivery" layoutX="418.0" layoutY="97.0" prefHeight="25.0" prefWidth="179.0" promptText=" lecture OR Presentation" />
+         </children>
+      </Pane>
+   </center>
+   <bottom>
+      <Pane prefHeight="227.0" prefWidth="1503.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="37.0" layoutY="22.0" prefHeight="25.0" prefWidth="147.0" text="Student Attendance" textFill="#111111">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAttendance_level" layoutX="14.0" layoutY="94.0" prefHeight="25.0" prefWidth="179.0" promptText=" Student Attendance" />
+            <Label layoutX="292.0" layoutY="22.0" prefHeight="25.0" prefWidth="181.0" text="students Missed Classes" textFill="#111111">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtStudents_missed" layoutX="280.0" layoutY="94.0" prefHeight="25.0" prefWidth="179.0" promptText="students Missed Classes" />
+            <Label layoutX="562.0" layoutY="22.0" prefHeight="25.0" prefWidth="181.0" text="Recommendations" textFill="#111111">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtRecommendations" layoutX="546.0" layoutY="94.0" prefHeight="25.0" prefWidth="179.0" promptText="Recommendations" />
+            <Button fx:id="btnEnter" layoutX="1089.0" layoutY="62.0" mnemonicParsing="false" onAction="#handleEnter" prefHeight="89.0" prefWidth="200.0" text="Enter" textFill="#d31111">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </Button>
+            <Label layoutX="799.0" layoutY="22.0" prefHeight="25.0" prefWidth="181.0" text="Assessment_malpractice" textFill="#111111">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAssessment_malpractice" layoutX="789.0" layoutY="94.0" prefHeight="25.0" prefWidth="179.0" promptText="Assessment_malpractice" />
+         </children>
+      </Pane>
+   </bottom>
+</BorderPane>
